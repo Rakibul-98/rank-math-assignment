@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 import NavBar from './Components/NavBar/NavBar';
 import Banner from './Components/Banner/Banner';
 import Graph from './Components/Graph/Graph';
@@ -7,7 +8,7 @@ import Footer from './Components/Footer/Footer';
 
 const Home = () => {
     return (
-        <div>
+        <div className='home-section'>
             <NavBar/>
             <Banner/>
             <Graph/>
