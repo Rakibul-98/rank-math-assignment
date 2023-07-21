@@ -1,32 +1,40 @@
 import React from 'react';
+import './Footer.css';
 import { FaBell, FaCompass, FaWallet } from "react-icons/fa";
 import { RiSettings2Fill } from "react-icons/ri";
 
 const Footer = () => {
-    const footerIcons =[
+    const footerIcons = [
         {
-            id:1,
-            icon:<FaWallet/>
+            id: 1,
+            icon: <FaWallet />,
+            class: "active"
         },
         {
-            id:2,
-            icon:<FaCompass/>
+            id: 2,
+            icon: <FaCompass />,
+            class: ""
         },
         {
-            id:3,
-            icon:<FaBell/>
+            id: 3,
+            icon: <FaBell />,
+            class: ""
         },
         {
-            id:4,
-            icon:<RiSettings2Fill/>
+            id: 4,
+            icon: <RiSettings2Fill />,
+            class: ""
         },
     ]
     return (
-        <div>
-            {
-                footerIcons.map(fIcon=>
-                <p key={fIcon.id}>{fIcon.icon}</p>)
-            }
+        <div className='footer-section'>
+            <div className='footer-div'>
+                {
+                    footerIcons.map(fIcon =>
+                        <p key={fIcon.id} className={fIcon.class}>{fIcon.icon}</p>)
+                }
+            </div>
+            <hr className='bottom-bar'/>
         </div>
     );
 };

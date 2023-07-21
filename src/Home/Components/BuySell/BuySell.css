@@ -1,0 +1,26 @@
+.transaction-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+.transaction-card{
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.buy,.sell{
+    border-radius: 50%;
+    color: white;
+    font-size: xx-large;
+    padding: 20px 0 13px;
+    margin-bottom: 10px;
+}
+.buy{
+    background-color: #1A9FF7;
+}
+.sell{
+    background-color: #FD4590;
+}

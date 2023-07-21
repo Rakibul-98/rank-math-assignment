@@ -1,0 +1,17 @@
+.tab-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.tab-title li{
+    list-style: none;
+}
+.tab-title a{
+    text-decoration: none;
+    padding: 4px 15px;
+}
+.tab-title a:hover, .tab-title a.active{
+    background-color: #AEB8C4;
+    border-radius: 25px;
+    color: white;
+}

@@ -6,4 +6,9 @@
 .home-section{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F6F9;
+    width: 450px;
+    margin: 0 auto;
+    border: 10px solid #b5c1d3;
+    border-radius: 50px;
+    position: relative;
 }

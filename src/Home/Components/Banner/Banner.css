@@ -1,0 +1,31 @@
+.banner-section{
+    background-color: white;
+    margin:20px 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+.banner-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.bitcoin-icon{
+    background-color: #FFA92B;
+    padding: 6px 10px 2px;
+    border-radius: 50%;
+    font-size: x-large;
+    margin-right: 20px;
+    color: white;
+}
+.exchange-rate{
+    background: #EE225D;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 25px;
+}
+.collapse-btn{
+    border: none;
+    background: none;
+    font-size: xx-large;
+    margin:0 50% auto;
+}

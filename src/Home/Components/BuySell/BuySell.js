@@ -1,5 +1,6 @@
 import React from 'react';
-import { LiaDollarSignSolid } from "react-icons/lia";
+import './BuySell.css';
+import { FaDollarSign } from "react-icons/fa";
 
 const BuySell = () => {
     const transactions = [
@@ -12,14 +13,15 @@ const BuySell = () => {
             id: 2,
             text: "Sell BTC",
             class: "sell",
-        },
+        }
     ]
+
     return (
-        <div>
+        <div className='transaction-div'>
             {
                 transactions.map(tr =>
-                    <div className={tr.class}>
-                        <p><LiaDollarSignSolid/></p>
+                    <div className="transaction-card">
+                        <p className={tr.class}><FaDollarSign/></p>
                         <p>{tr.text}</p>
                     </div>
                 )

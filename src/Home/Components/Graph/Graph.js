@@ -1,18 +1,43 @@
 import React from 'react';
+import './Graph.css'
+import Chart from './Chart';
 
 const Graph = () => {
+    const tabInfos=[
+        {
+            id:1,
+            name:"Day",
+            class:""
+        },
+        {
+            id:2,
+            name:"Week",
+            class:"active"
+        },
+        {
+            id:3,
+            name:"Month",
+            class:""
+        },
+        {
+            id:4,
+            name:"Year",
+            class:""
+        },
+    ]
     return (
         <div>
             <div>
-                <ul>
-                    <li><a href="">Day</a></li>
-                    <li><a href="">Week</a></li>
-                    <li><a href="">Month</a></li>
-                    <li><a href="">Year</a></li>
+                <ul className="tab-title">
+                    {
+                        tabInfos.map(ti=>
+                        <li key={ti.id}><a className={ti.class} href="">{ti.name}</a>
+                        </li>)
+                    }
                 </ul>
             </div>
             <div>
-                
+                <Chart/>
             </div>
         </div>
     );
