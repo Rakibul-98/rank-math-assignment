@@ -3,7 +3,7 @@ import Home from './Home/Home';
 
 function App() {
   return (
-    <div className='main-section'>
+    <div className='body-section'>
       <Home/>
     </div>
   );

@@ -25,13 +25,14 @@ const Graph = () => {
             class:""
         },
     ]
+
     return (
         <div>
             <div>
                 <ul className="tab-title">
                     {
                         tabInfos.map(ti=>
-                        <li key={ti.id}><a className={ti.class} href="">{ti.name}</a>
+                        <li key={ti.id} className={ti.class}>{ti.name}
                         </li>)
                     }
                 </ul>

@@ -1,0 +1,21 @@
+#menu-div{
+    width: 200px;
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 20px;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    font-size: large;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.menu-items:hover{
+    color: blue;
+    box-shadow: 5px 5px 10px grey;
+}

@@ -11,6 +11,10 @@
     border-radius: 20px;
     font-weight: 600;
 }
+.transaction-card:hover{
+    background-color: rgb(246, 242, 242);
+    box-shadow: 5px 5px 10px grey;
+}
 .buy,.sell{
     border-radius: 50%;
     color: white;

@@ -5,12 +5,10 @@
 }
 .tab-title li{
     list-style: none;
-}
-.tab-title a{
-    text-decoration: none;
     padding: 4px 15px;
+    cursor: pointer;
 }
-.tab-title a:hover, .tab-title a.active{
+.tab-title li:hover, .tab-title li.active{
     background-color: #AEB8C4;
     border-radius: 25px;
     color: white;

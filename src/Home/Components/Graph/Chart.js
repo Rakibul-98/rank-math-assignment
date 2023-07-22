@@ -1,5 +1,5 @@
 import React from 'react';
-import { AreaChart, Area } from 'recharts';
+import { AreaChart, Area, Tooltip } from 'recharts';
 import './Chart.css';
 import { GoDotFill } from "react-icons/go";
 
@@ -51,6 +51,7 @@ const Chart = () => {
             </div>
             <AreaChart width={370} height={150} data={data} >
                 <Area type="monotone" dataKey="rate" stroke="#FF8F17" fill="#FFF7EE" strokeWidth="4" />
+                <Tooltip/>
             </AreaChart>
             <div className='current-rate'>
             <GoDotFill l style={{ color: "#FF8F17" }} />

@@ -2,12 +2,15 @@
     background-color: white;
     margin:20px 0;
     border-radius: 10px;
-    padding: 20px;
+}
+.banner-section:hover{
+    box-shadow: 5px 5px 10px grey;
 }
 .banner-header{
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    align-items: center;
 }
 .bitcoin-icon{
     background-color: #FFA92B;
@@ -28,4 +31,11 @@
     background: none;
     font-size: xx-large;
     margin:0 50% auto;
+    cursor: pointer;
+}
+.collapse-btn:hover{
+    color: #EE225D;
+}
+#expand-sec, #up{
+    display: none;
 }

@@ -12,3 +12,30 @@
     border-radius: 50px;
     position: relative;
 }
+.key{
+    width: 10px;
+    border: 1px solid #b5c1d3;
+    border-radius: 10px;
+    background: #b5c1d3;
+    position: absolute;
+}
+.power-btn{
+    height: 120px;
+    right: -15px;
+    top: 180px;
+}
+.alert-btn{
+    height: 50px;
+    left: -15px;
+    top: 100px;
+}
+.volume-btn{
+    height: 70px;
+    left: -15px;
+}
+.up{
+    top: 200px;
+}
+.down{
+    top: 300px;
+}

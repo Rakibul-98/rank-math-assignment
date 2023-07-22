@@ -48,4 +48,11 @@
 }
 .nav-icon{
     font-size: x-large;
+    cursor: pointer;
+}
+.nav-icon:hover{
+    color: rgb(255, 94, 1);
+}
+#cross{
+    display: none;
 }
