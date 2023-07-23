@@ -3,59 +3,36 @@ import { AreaChart, Area, Tooltip } from 'recharts';
 import './Chart.css';
 import { GoDotFill } from "react-icons/go";
 
-const Chart = () => {
+const Chart = ({data}) => {
+    const rates = data.map(d=>(d.rate));
+    const max = Math.max(...rates);
+    const min = Math.min(...rates);
+    const avg = (min+max)/2;
 
-    const data = [
-        {
-            name: 'Sat',
-            rate: "4.895"
-        },
-        {
-            name: 'Sun',
-            rate: "5.495"
-        },
-        {
-            name: 'Mon',
-            rate: "5.195"
-        },
-        {
-            name: 'Tues',
-            rate: "5.495"
-        },
-        {
-            name: 'Wed',
-            rate: "6.857"
-        },
-        {
-            name: 'Thurs',
-            rate: "6.358"
-        },
-        {
-            name: 'Fri',
-            rate: "6.595"
-        }
-
-    ];
+    const chartTitle = [
+        { id: 1, name: "Lower", value: min, color: "#EF2755" },
+        { id: 2, name: "Higher", value: max, color: "#1EC070" }
+    ]
 
     return (
         <div className='chart-div'>
             <div className='chart-status'>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                    <GoDotFill style={{ color: "#EF2755" }} />
-                    <p> Lower: $<span>4.895</span></p>
-                </div>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                    <GoDotFill style={{ color: "gray" }} />
-                    <p>Higher: $<span>6.857</span></p>
-                </div>
+                {
+                    chartTitle.map(ct =>
+                        <div key={ct.id} style={{ display: "flex", alignItems: "center" }}>
+                            <GoDotFill style={{color: `${ct.color}`}} />
+                            <p style={{color:"#AEB8C4"}}> {ct.name}: $<span>{ct.value}</span></p>
+                        </div>
+                    )
+                }
             </div>
             <AreaChart width={370} height={150} data={data} >
-                <Area type="monotone" dataKey="rate" stroke="#FF8F17" fill="#FFF7EE" strokeWidth="4" />
-                <Tooltip/>
+                <Area type="monotone" dataKey="rate" stroke="#FF8F17" fill="#fbe8d4" strokeWidth="4"/>
+                <Tooltip />
             </AreaChart>
             <div className='current-rate'>
-            <GoDotFill l style={{ color: "#FF8F17" }} />
-                <p> 1 BTC = $<span>5.483</span></p>
+                <GoDotFill style={{ color: "#FF8F17", marginRight:"4px"}} />
+                <p>1 BTC = $<span>{avg}</span></p>
             </div>
         </div>
     );

@@ -7,6 +7,8 @@
     list-style: none;
     padding: 4px 15px;
     cursor: pointer;
+    color: #AEB8C4 ;
+    font-weight: 500;
 }
 .tab-title li:hover, .tab-title li.active{
     background-color: #AEB8C4;

@@ -49,6 +49,7 @@
 .nav-icon{
     font-size: x-large;
     cursor: pointer;
+    color: #AEB8C4;
 }
 .nav-icon:hover{
     color: rgb(255, 94, 1);

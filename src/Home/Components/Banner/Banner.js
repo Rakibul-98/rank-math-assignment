@@ -14,11 +14,11 @@ const Banner = () => {
                         <p className='bitcoin-icon'><BsCurrencyBitcoin /></p>
                         <p>Bitcoin</p>
                     </div>
-                    <p>BTC</p>
+                    <p style={{color:"#a0a5ab"}}>BTC</p>
                 </div>
                 <h1 style={{ margin: "5px 0" }}><span>3.529020</span> BTC</h1>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                    <h3 style={{ color: "gray" }}>$<span>19.153</span> USD</h3>
+                    <h3 style={{ color: "#AEB8C4" }}>$<span>19.153</span> USD</h3>
                     <p className='exchange-rate'>- 2.32%</p>
                 </div>
                 <button className='collapse-btn' onClick={() => handleToggle("banner")}>

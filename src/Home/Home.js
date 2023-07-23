@@ -21,7 +21,7 @@ const Home = () => {
             <Menu />
             <div>
                 {
-                    btns.map(btn=><hr className={btn.class} />)
+                    btns.map(btn=><hr key={btn.id} className={btn.class} />)
                 }
             </div>
             <div id='main-content-div' style={{ margin: "0 30px" }}>

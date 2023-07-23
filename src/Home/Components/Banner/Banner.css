@@ -32,9 +32,10 @@
     font-size: xx-large;
     margin:0 50% auto;
     cursor: pointer;
+    color: #AEB8C4;
 }
 .collapse-btn:hover{
-    color: #EE225D;
+    color: black;
 }
 #expand-sec, #up{
     display: none;

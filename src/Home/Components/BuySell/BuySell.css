@@ -7,7 +7,7 @@
 }
 .transaction-card{
     background-color: white;
-    padding: 20px 50px;
+    padding: 30px 50px;
     border-radius: 20px;
     font-weight: 600;
 }
@@ -19,8 +19,7 @@
     border-radius: 50%;
     color: white;
     font-size: xx-large;
-    padding: 20px 0 13px;
-    margin-bottom: 10px;
+    padding: 5px 19px;
 }
 .buy{
     background-color: #1A9FF7;
